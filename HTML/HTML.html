@@ -12,7 +12,7 @@
         <p style="color:red; font-family:verdana;">Мой <sup>первый</sup> абзац.</p>
         <p title="Тупое говно тупого говна">Мой <sub>второй</sub> абзац.</p>
         <p><a href="https://github.com/vlad-fray/lolteam313">Наш GitHub</a></p>
-        <p><a href="../мащит/notaref.html">Boy next door</a></p>
+        <p><a href="../notaref/notaref.html">Boy next door</a></p>
         <br>
  
         <a href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D1%80%D1%80%D0%B8%D0%BD%D0%B3%D1%82%D0%BE%D0%BD,_%D0%91%D0%B8%D0%BB%D0%BB%D0%B8" target="_blank">
@@ -20,17 +20,20 @@
         </a>
 
         <hr>
-        <div id="p01">
-            <ul>
-                <li class="error">Coffee</li>
-                <li><b>Tea</b></li>
-                <li>Milk</li>
-            </ul>
-            <ol>
-                <li class="error"><strong>Mat`</strong></li>
-                <li><small>Eshe Mat`</small></li>
-                <li>Mtt</li>
-            </ol>
-        </div>
+        <table style="width: 80%; margin:auto; font-style: italic;">
+            <tr style="font-size: x-large;">
+                <th>Drinks</th>
+                <th>Food</th>
+            </tr>
+            <tr>
+                <audio id="player" src="../HTML/sounds/Milk.mp3"></audio>
+                <td><button onclick="document.getElementById('player').play()">Milk</button></td>
+                <td>Pancake</td>
+            </tr>
+            <tr>
+                <td>Tea</td>
+                <td>Cake</td>
+            </tr>
+        </table>
     </body>
 </html>

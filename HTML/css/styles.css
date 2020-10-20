@@ -5,7 +5,7 @@ body {
     background-image: url('../images/clouds.jpeg');
     background-repeat: no-repeat; 
     background-size: cover;
-    text-align:center; 
+    text-align: center; 
     border: 10px solid Tomato;
     padding: 30px;
 }
@@ -15,4 +15,10 @@ body {
 }
 li.error {
     color: red;
+}
+table, th, td {
+    border: 1px dashed blue;
+    background: skyblue;
+    border-collapse: collapse;
+    padding: 15px;
 }
