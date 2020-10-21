@@ -1,24 +1,39 @@
 p {
     font-size: 110%;
 }
-body {
+
+.container {
+    width: 75%;
+    max-width: 1600px;
+    min-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
     background-image: url('../images/clouds.jpeg');
     background-repeat: no-repeat; 
     background-size: cover;
     text-align: center; 
-    border: 10px solid Tomato;
-    padding: 30px;
-}
-#p01 {
-    border:5px solid Violet; 
-    margin: 20px;
-}
-li.error {
-    color: red;
+    border: 10px solid turquoise;
 }
 table, th, td {
     border: 1px dashed blue;
     background: skyblue;
     border-collapse: collapse;
     padding: 15px;
+}
+
+#horizontal-style {
+    display: table;
+    width: 100%
+}
+#horizontal-style li {
+    display: table-cell;
+}
+#horizontal-style a {
+    display: block;
+    border: 1px solid turquoise;
+    text-align: center;
+    margin: 0 5px;
+    background: rgb(175, 216, 218);
+    font-size: 20px;
+    color:black;
 }
