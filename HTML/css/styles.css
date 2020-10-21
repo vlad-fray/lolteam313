@@ -14,6 +14,7 @@ p {
     text-align: center; 
     border: 10px solid turquoise;
 }
+
 table, th, td {
     border: 1px dashed blue;
     background: skyblue;
@@ -23,11 +24,13 @@ table, th, td {
 
 #horizontal-style {
     display: table;
-    width: 100%
+    width: 100%;
 }
+
 #horizontal-style li {
     display: table-cell;
 }
+
 #horizontal-style a {
     display: block;
     border: 1px solid turquoise;
@@ -36,4 +39,11 @@ table, th, td {
     background: rgb(175, 216, 218);
     font-size: 20px;
     color:black;
+}
+
+table {
+    width: 80%; 
+    margin: auto; 
+    font-style: italic; 
+    margin-top: 20px;
 }
