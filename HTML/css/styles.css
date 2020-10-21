@@ -40,3 +40,10 @@ table, th, td {
     font-size: 20px;
     color:black;
 }
+
+table {
+    width: 80%; 
+    margin: auto; 
+    font-style: italic; 
+    margin-top: 20px;
+}
