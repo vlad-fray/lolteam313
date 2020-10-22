@@ -8,18 +8,25 @@ p {
     min-width: 960px;
     margin: 0 auto;
     padding: 10px;
-    background-image: url('../images/clouds.jpeg');
-    background-repeat: no-repeat; 
+    background-image: url('../images/back.jpeg');
+    background-repeat: repeat-x; 
     background-size: contain;
     text-align: center; 
     border: 10px solid turquoise;
     font-family: Comic Sans MS;
 }
 
-table, th, td {
-    border: 2px solid turquoise;
+table {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+}
+
+th, td {
+    border: 5px solid turquoise;
     background: rgb(175, 216, 218);
     border-collapse: collapse;
+    width: 50%;
 }
 
 #horizontal-style {
@@ -41,14 +48,8 @@ table, th, td {
     color:black;
 }
 
-table {
-    width: 80%; 
-    margin: auto; 
-    font-style: italic; 
-    margin-top: 20px;
-}
-
 .button {
     margin: 4px 2px;
     background-color: rgb(175, 216, 218);
+    text-shadow: 2px 1px 1px whitesmoke;
 }
