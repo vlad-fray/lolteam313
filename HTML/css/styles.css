@@ -10,16 +10,16 @@ p {
     padding: 10px;
     background-image: url('../images/clouds.jpeg');
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: contain;
     text-align: center; 
     border: 10px solid turquoise;
+    font-family: Comic Sans MS;
 }
 
 table, th, td {
-    border: 1px dashed blue;
-    background: skyblue;
+    border: 2px solid turquoise;
+    background: rgb(175, 216, 218);
     border-collapse: collapse;
-    padding: 15px;
 }
 
 #horizontal-style {
@@ -46,4 +46,9 @@ table {
     margin: auto; 
     font-style: italic; 
     margin-top: 20px;
+}
+
+.button {
+    margin: 4px 2px;
+    background-color: turquoise;
 }
