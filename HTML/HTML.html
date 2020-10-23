@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>GuchiPage</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="images/icon.jpg">
-    </head>
+<head>
+    <title>GuchiPage</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon.jpg">
+</head>
     
-    <body>
-
+<body>
+    <header class="header">
         <div class="container">
-            <div style="width: 90%;">
-                <ul id="horizontal-style">
-                    <li><a href="https://html5css.ru/html/default.php" 
-                        target="_blank">Tutorial</a></li>
-                    <li><a href="https://github.com/vlad-fray/lolteam313" 
-                        target="_blank">GitHub</a></li>
-                    <li><a href="../notaref/notaref.html">BoyNextDoor</a></li>
-                    <li><a href="https://ru.pathofexile.com/" 
-                        target="_blank">Пойти Нахуй</a></li>
-                </ul>
+            <div class="header__inner">
+                <div class="header__logo">GuchiPage</div>
+
+                <nav class="nav">
+                    <a class="nav__link" href="https://html5css.ru/html/default.php" target="_blank">Tutorial</a>
+                    <a class="nav__link" href="https://github.com/vlad-fray/lolteam313" target="_blank">GitHub</a>
+                    <a class="nav__link" href="../notaref/notaref.html">BoyNextDoor</a>
+                    <a class="nav__link" href="https://ru.pathofexile.com/" target="_blank">Пойти Нахуй</a>
+                </nav>
             </div>
+        </div> 
+    </header>
 
-            <h1 style="color: turquoise; text-shadow: 2px 1px 1px green;">
-                <i>GachiPage</i>
-            </h1>
+    <div class="intro">
+        <div class='container'>
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">Be the boss of the gym</h2>
+                <h1 class="intro__title">STICK YOUR FINGER</h1>
+            </div>
+        </div>
+    </div>
 
+    <div class="content">
+        <div class="container">
             <table>
                 <tr style="font-size: x-large;">
                     <th colspan="2">Герои нашего времени</th>
@@ -33,7 +41,7 @@
                 <tr>
                     <td>
                         <audio id="van.sound" src="sounds/Do you like what you see.mp3"></audio>
-                        <button class="button" 
+                        <button class="button"
                             onclick="document.getElementById('van.sound').play()">
                             Van Darkholme
                         </button>
@@ -79,29 +87,52 @@
 
             <div class="game">
                 <button onclick="JumpImage(this)" id="game"
-                    style="background: none; border: none; margin-top: 20%;">
+                    style="background: none; border: none;">
                     <img src="images/game.png" alt="game.image" style="width: 50px; height: 70px;">
                 </button>
             </div>
-
         </div>
-    </body>
-</html>
-
-<script>
-
-    function Game() {
+    </div>
         
-    }
-
-    function JumpImage(Element) {
-        var a = document.getElementById("this");
-    }
-
-</script>
+    <script src="scripts/testscript.js"></script>
+</body>
+</html>
 
 <!--
     1. Tutorials списком выдвигающимся как анимация
     https://colorscheme.ru/html-colors.html
     2. Game 
+-->
+
+<!--
+#horizontal-style {
+    display: table;
+    width: 100%;
+}
+
+#horizontal-style li {
+    display: table-cell;
+}
+
+#horizontal-style a {
+    display: block;
+    border: 1px solid turquoise;
+    text-align: center;
+    margin: 0 5px;
+    background: PowderBlue;
+    font-size: 20px;
+    color:black;
+}
+
+<div style="width: 90%;">
+                <ul id="horizontal-style">
+                    <li><a href="https://html5css.ru/html/default.php" 
+                        target="_blank">Tutorial</a></li>
+                    <li><a href="https://github.com/vlad-fray/lolteam313" 
+                        target="_blank">GitHub</a></li>
+                    <li><a href="../notaref/notaref.html">BoyNextDoor</a></li>
+                    <li><a href="https://ru.pathofexile.com/" 
+                        target="_blank">Пойти Нахуй</a></li>
+                </ul>
+            </div>
 -->
