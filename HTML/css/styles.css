@@ -9,7 +9,7 @@ p {
     margin: 0 auto;
     padding: 10px;
     background-image: url('../images/back.jpeg');
-    background-repeat: repeat-x; 
+    background-repeat: repeat; 
     background-size: contain;
     text-align: center; 
     border: 10px solid turquoise;
@@ -24,7 +24,7 @@ table {
 
 th, td {
     border: 5px solid turquoise;
-    background: rgb(175, 216, 218);
+    background: PowderBlue;
     border-collapse: collapse;
     width: 50%;
 }
@@ -43,13 +43,16 @@ th, td {
     border: 1px solid turquoise;
     text-align: center;
     margin: 0 5px;
-    background: rgb(175, 216, 218);
+    background: PowderBlue;
     font-size: 20px;
     color:black;
 }
 
 .button {
     margin: 4px 2px;
-    background-color: rgb(175, 216, 218);
+    background-color: PowderBlue;
     text-shadow: 2px 1px 1px whitesmoke;
+    border: 2px solid turquoise;
+    font-family: Comic Sans MS;
+    font-size: large;
 }
