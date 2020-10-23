@@ -78,7 +78,10 @@
             </table>
 
             <div class="game">
-                
+                <button onclick="JumpImage(this)" id="game"
+                    style="background: none; border: none; margin-top: 20%;">
+                    <img src="images/game.png" alt="game.image" style="width: 50px; height: 70px;">
+                </button>
             </div>
 
         </div>
@@ -86,11 +89,19 @@
 </html>
 
 <script>
-    function ShowHidden(Element) {
-        var a = document.getElementById('hidden');
-        a.onclick = function() {
-            this.style.display = 'inline-table';
-        }
-        return false;
+
+    function Game() {
+        
     }
+
+    function JumpImage(Element) {
+        var a = document.getElementById("this");
+    }
+
 </script>
+
+<!--
+    1. Tutorials списком выдвигающимся как анимация
+    https://colorscheme.ru/html-colors.html
+    2. Game 
+-->
