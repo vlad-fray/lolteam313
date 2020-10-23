@@ -8,18 +8,25 @@ p {
     min-width: 960px;
     margin: 0 auto;
     padding: 10px;
-    background-image: url('../images/clouds.jpeg');
-    background-repeat: no-repeat; 
-    background-size: cover;
+    background-image: url('../images/back.jpeg');
+    background-repeat: repeat; 
+    background-size: contain;
     text-align: center; 
     border: 10px solid turquoise;
+    font-family: Comic Sans MS;
 }
 
-table, th, td {
-    border: 1px dashed blue;
-    background: skyblue;
+table {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+}
+
+th, td {
+    border: 5px solid turquoise;
+    background: PowderBlue;
     border-collapse: collapse;
-    padding: 15px;
+    width: 50%;
 }
 
 #horizontal-style {
@@ -36,14 +43,16 @@ table, th, td {
     border: 1px solid turquoise;
     text-align: center;
     margin: 0 5px;
-    background: rgb(175, 216, 218);
+    background: PowderBlue;
     font-size: 20px;
     color:black;
 }
 
-table {
-    width: 80%; 
-    margin: auto; 
-    font-style: italic; 
-    margin-top: 20px;
+.button {
+    margin: 4px 2px;
+    background-color: PowderBlue;
+    text-shadow: 2px 1px 1px whitesmoke;
+    border: 2px solid turquoise;
+    font-family: Comic Sans MS;
+    font-size: large;
 }
