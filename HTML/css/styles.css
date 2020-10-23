@@ -56,3 +56,13 @@ th, td {
     font-family: Comic Sans MS;
     font-size: large;
 }
+
+.game {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 400px;
+    background-color: powderblue;
+    border: 5px solid turquoise;
+}
