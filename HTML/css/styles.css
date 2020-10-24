@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: Comic Sans MS;
     font-size: 15px;
     line-height: 1.6;
@@ -24,13 +24,15 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 /* Table */
 table {
     margin: auto;
     width: 80%;
+    font-family: DAYTON;
+    font-style: italic;
 }
 
 th, td {
@@ -47,12 +49,13 @@ th, td {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    text-transform: uppercase;
+    margin: 20px auto;
 }
 
 .intro__inner {
     width: 100%;
     max-width: 880px;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -61,31 +64,56 @@ th, td {
     font-size: 180px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
     line-height: 1;
     font-family: DAYTON;
     font-style: italic;
     text-shadow: 5px 2px 2px green;
 }
 
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: turquoise;
+}
+
 .intro__suptitle {
+    margin-bottom: 20px;
     color: turquoise;
     font-size: 40px;
     font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
     text-shadow: 3px 1px 1px green;
+}
+
+/* Butttons */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    border: 3px solid black;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+
+    transition: color .2s linear, border .2s linear;
+}
+
+.btn:hover {
+    color: turquoise;
+    border: 3px solid turquoise;
 }
 
 /* Header */
 .header {
     width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    padding-top: 30px;
+    margin: 20px auto;
 }
 
 .header__inner {
@@ -144,6 +172,29 @@ th, td {
 
 .nav__link:hover::after {
     opacity: 1;
+}
+
+/* Slider */
+
+.slider {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item {
+    width: 23%;
+    padding: 20px 0;
+    border-top: 3px solid turquoise;
+    font-size: 18px;
+    color: turquoise;
+    text-transform: uppercase;
+}
+
+.slider__num {
+    font-size: 24px;
+    color: turquoise;
+    font-weight: 700;
 }
 
 /* Others */
