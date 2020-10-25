@@ -70,6 +70,16 @@ th, td {
     text-shadow: 5px 2px 2px green;
 }
 
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: turquoise;
+}
+
 .intro__suptitle {
     margin-bottom: 20px;
     color: turquoise;
