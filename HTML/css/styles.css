@@ -177,7 +177,10 @@ th, td {
 /* Slider */
 
 .slider {
-    padding-top: 30px;
+    margin: 20px auto;
+}
+
+.slider__inner {
     display: flex;
     justify-content: space-between;
 }
@@ -185,10 +188,32 @@ th, td {
 .slider__item {
     width: 23%;
     padding: 20px 0;
+    position: relative;
+
     border-top: 3px solid turquoise;
+    opacity: 0.5;
+
     font-size: 18px;
     color: turquoise;
     text-transform: uppercase;
+}
+
+.slider__item.active {
+    opacity: 1;
+}
+
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: black;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 0;
 }
 
 .slider__num {
