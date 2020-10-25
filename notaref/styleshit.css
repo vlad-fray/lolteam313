@@ -42,11 +42,12 @@ a:active {
 }
 ul {
 list-style-type: none;
-margin: auto;
-padding: 0;
+margin: 0, auto;
+padding-right: 0;
 text-align: center;
 overflow: hidden;
 background-color: none;
+border: 1px white;
 }
 li {
     float: left;
