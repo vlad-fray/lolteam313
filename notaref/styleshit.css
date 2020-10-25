@@ -1,8 +1,12 @@
-body 
+body {
+    text-align: center;
+}
  table, th, td {
-     color: white;
+    font-size: 20px;
+    color: white;
     border: 1px solid whitesmoke;
     border-collapse: collapse;
+    align-items: center;
 }
 th, td {
     padding: 5px;
@@ -38,8 +42,9 @@ a:active {
 }
 ul {
 list-style-type: none;
-margin: 0;
+margin: auto;
 padding: 0;
+text-align: center;
 overflow: hidden;
 background-color: none;
 }
