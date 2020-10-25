@@ -44,17 +44,16 @@ th, td {
 
 /* Intro */
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
-    height: 100vh;
-    margin: 20px auto;
+    margin: 100px auto;
 }
 
 .intro__inner {
     width: 100%;
     max-width: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     margin: 0 auto;
 }
@@ -78,13 +77,11 @@ th, td {
     text-shadow: 3px 1px 1px green;
 }
 
-/* Butttons */
-
-.btn {
-    display: inline-block;
-    vertical-align: top;
+.intro__button {
     padding: 10px 15px;
     text-decoration: none;
+    margin: 20px auto;
+    width: 20%;
 
     border: 3px solid black;
     color: black;
@@ -95,7 +92,7 @@ th, td {
     transition: color .2s linear, border .2s linear;
 }
 
-.btn:hover {
+.intro__button:hover {
     color: turquoise;
     border: 3px solid turquoise;
 }
@@ -107,7 +104,7 @@ th, td {
 }
 
 .header__inner {
-    display: flex; /* создаёт некий контейнер по одной из оси */
+    display: flex; /* создаёт некий контейнер по одной из оси x*/
     justify-content: space-between; 
     /* выранивание элементов контейнера и пространства между ними по х */
 
@@ -167,6 +164,7 @@ th, td {
 /* Slider */
 
 .slider {
+    width: 100%;
     margin: 20px auto;
 }
 
@@ -186,30 +184,6 @@ th, td {
     font-size: 18px;
     color: turquoise;
     text-transform: uppercase;
-}
-
-.slider__item.active {
-    opacity: 1;
-}
-
-.slider__item.active:before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 3px;
-
-    background-color: black;
-
-    position: absolute;
-    top: -3px;
-    left: 0;
-    z-index: 0;
-}
-
-.slider__num {
-    font-size: 24px;
-    color: turquoise;
-    font-weight: 700;
 }
 
 /* Others */
