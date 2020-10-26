@@ -1,0 +1,39 @@
+
+.game {
+    margin: auto;
+    width: 80%;
+}
+
+.game__inner {
+    background-color: powderblue;
+    border: 5px solid turquoise;
+    height: 400px;
+}
+
+.game__menu {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: auto;
+}
+
+.game__controller{
+    width: 50%;
+    font-weight: 900;
+    height: 50px;
+}
+
+.game__counter {
+    width: 50%;
+    margin: auto 0;
+}
+
+#bgame {
+    width: 100%;
+    height: 50px;
+    background-color: powderblue;
+    border: 3px solid turquoise;
+}
+
+#bgame:hover {
+    
+}

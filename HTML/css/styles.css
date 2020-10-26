@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    min-width: 960px;
     font-family: Comic Sans MS;
     font-size: 15px;
     line-height: 1.6;
@@ -28,174 +29,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Table */
-table {
-    margin: auto;
+.table {
+    margin: 50px auto;
     width: 80%;
+}
+
+.table__inner {
     font-family: DAYTON;
-    font-style: italic;
+    font-style: italic; 
+    width: 100%;
+    border: 5px solid turquoise;
 }
 
 th, td {
     border: 5px solid turquoise;
     background: PowderBlue;
-    border-collapse: collapse;
-    width: 50%;
 }
 
-/* Intro */
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    margin: 20px auto;
-}
-
-.intro__inner {
-    width: 100%;
-    max-width: 880px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.intro__title {
-    color: turquoise;
-    font-size: 180px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1;
-    font-family: DAYTON;
-    font-style: italic;
-    text-shadow: 5px 2px 2px green;
-}
-
-.intro__title:after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    margin: 60px auto;
-
-    background-color: turquoise;
-}
-
-.intro__suptitle {
-    margin-bottom: 20px;
-    color: turquoise;
-    font-size: 40px;
-    font-weight: 700;
-    text-shadow: 3px 1px 1px green;
-}
-
-/* Butttons */
-
-.btn {
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 15px;
-    text-decoration: none;
-
-    border: 3px solid black;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-
-    transition: color .2s linear, border .2s linear;
-}
-
-.btn:hover {
-    color: turquoise;
-    border: 3px solid turquoise;
-}
-
-/* Header */
-.header {
-    width: 100%;
-    margin: 20px auto;
-}
-
-.header__inner {
-    display: flex; /* создаёт некий контейнер по одной из оси */
-    justify-content: space-between; 
-    /* выранивание элементов контейнера и пространства между ними по х */
-
-    align-items: center;
-}
-
-.header__logo {
-    color: turquoise; 
-    text-shadow: 3px 1px 1px green;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-/* Nav */
-.nav {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.nav__link {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 10px;
-    color: black;
-    text-decoration: none;
-    position: relative;
-
-    transition: color .1s linear;
-}
-
-.nav__link:after { /* полосочка под ссылкой */
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-
-    background-color: turquoise;
-
-    position: absolute; /* Тут абсолют, значит, у родителя релатив */
-    top: 100%;
-    left: 0;
-    z-index: 1;
-
-    opacity: 0;
-    transition: opacity .1s linear;
-}
-
-.nav__link:hover { /* ховер - изменение при наведении на элемент */
-    color: turquoise;
-}
-
-.nav__link:hover::after {
-    opacity: 1;
-}
-
-/* Slider */
-
-.slider {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider__item {
-    width: 23%;
-    padding: 20px 0;
-    border-top: 3px solid turquoise;
-    font-size: 18px;
-    color: turquoise;
-    text-transform: uppercase;
-}
-
-.slider__num {
-    font-size: 24px;
-    color: turquoise;
-    font-weight: 700;
-}
+table, th, td { border-collapse: collapse;}
 
 /* Others */
 
@@ -206,14 +57,4 @@ th, td {
     border: 2px solid turquoise;
     font-family: Comic Sans MS;
     font-size: large;
-}
-
-.game {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 400px;
-    background-color: powderblue;
-    border: 5px solid turquoise;
 }
