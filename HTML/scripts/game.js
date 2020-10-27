@@ -1,4 +1,4 @@
-alert("Готов сосать?")
+
 
 function gameControl(){
     if (document.getElementById("bgame").innerHTML == "Start"){
@@ -9,10 +9,46 @@ function gameControl(){
 }
 
 function startGame() {
+  document.getElementById("igame").style.display = "block"
   document.getElementById("bgame").innerHTML='Stop'
-  const x = Math.random()
+  startTimer()
 }
 
 function stopGame() {
   document.getElementById("bgame").innerHTML='Start'
+  document.getElementById("igame").style.display = "none"
+  document.getElementById("cgame").innerHTML="0"
+  clearTimeout(timerId);
+  document.getElementById("tgame").innerHTML="00:10"
+}
+
+function imageControl() {
+  let num = +document.getElementById("cgame").innerHTML++
+  let top = String(Math.round(Math.random() * 300)) + "px"
+  let left = String(Math.round(Math.random() * 550)) + "px"
+  document.getElementById("igame").style.margin = "0"
+  document.getElementById("igame").style.marginTop = top
+  document.getElementById("igame").style.marginLeft = left
+  document.getElementById("ah.mp3").play()
+}
+
+
+function startTimer() {
+  var game_timer = document.getElementById("tgame").innerHTML;
+  var arr = game_timer.split(":");
+  var m = arr[0];
+  var s = arr[1];
+  if (s == 0) {
+    if (m == 0) {
+      stopGame();
+      return
+    }
+    m--;
+    if (m < 10) m = "0" + m;
+    s = 59;
+  }else s--;
+  
+  if (s < 10) s = "0" + s;
+  document.getElementById("tgame").innerHTML = m+":"+s;
+  timerId = setTimeout(startTimer, 1000);
 }
