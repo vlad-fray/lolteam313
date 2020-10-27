@@ -2,6 +2,7 @@
 .game {
     margin: auto;
     width: 80%;
+    max-width: 800px;
 }
 
 .game__inner {
@@ -17,20 +18,25 @@
 }
 
 .game__controller{
-    width: 33.3%;
+    width: 25%;
     font-weight: 900;
     height: 60px;
-    
 }
 
 .game__counter {
-    width: 33.3%;
+    width: 25%;
     background-color: powderblue;
     border: 3px solid turquoise;
 }
 
 .game__timer {
-    width: 33.3%;
+    width: 25%;
+    background-color: powderblue;
+    border: 3px solid turquoise;
+}
+
+.game__record {
+    width: 25%;
     background-color: powderblue;
     border: 3px solid turquoise;
 }
@@ -38,6 +44,8 @@
 #bgame {
     width: 100%;
     height: 100%;
+    font-weight: bold;
+    font-size: 16px;
     background-color: powderblue;
     border: 3px solid turquoise;
 }
@@ -46,10 +54,11 @@
     display: none;
     background: none; 
     border: none;
+    outline: none;
     margin-top: 300px;
     margin-left: 550px;
 }
 
-#bgame:hover {
-    
+#rgame {
+    font-weight: bold;
 }

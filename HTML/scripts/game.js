@@ -17,6 +17,13 @@ function startGame() {
 function stopGame() {
   document.getElementById("bgame").innerHTML='Start'
   document.getElementById("igame").style.display = "none"
+  
+  if (document.getElementById("cgame").innerHTML > 
+    document.getElementById("rgame").innerHTML) {
+    document.getElementById("rgame").innerHTML = 
+    document.getElementById("cgame").innerHTML
+  }
+
   document.getElementById("cgame").innerHTML="0"
   clearTimeout(timerId);
   document.getElementById("tgame").innerHTML="00:10"
@@ -26,10 +33,18 @@ function imageControl() {
   let num = +document.getElementById("cgame").innerHTML++
   let top = String(Math.round(Math.random() * 300)) + "px"
   let left = String(Math.round(Math.random() * 550)) + "px"
+
   document.getElementById("igame").style.margin = "0"
   document.getElementById("igame").style.marginTop = top
   document.getElementById("igame").style.marginLeft = left
-  document.getElementById("ah.mp3").play()
+ 
+  playSound()
+}
+
+function playSound() {
+  let snd = new Audio()
+  snd.src = "sounds/ah.mp3"
+  snd.play()
 }
 
 
