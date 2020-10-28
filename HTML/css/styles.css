@@ -49,6 +49,11 @@ th, td {
 
 table, th, td { border-collapse: collapse;}
 
+#tabgif {
+    width:150px; 
+    height:100px
+}
+
 /* Others */
 
 .button {
