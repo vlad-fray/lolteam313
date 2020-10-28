@@ -1,5 +1,5 @@
 
-
+// врубает игру или выключает по нажатии на кнопку
 function gameControl(){
     if (document.getElementById("bgame").innerHTML == "Start"){
       startGame();
@@ -8,12 +8,14 @@ function gameControl(){
     }
 }
 
+//показывает скрытую кнопку с картинкой
 function startGame() {
   document.getElementById("igame").style.display = "block"
   document.getElementById("bgame").innerHTML='Stop'
   startTimer()
 }
 
+//останавливает игру, возвращает время и счёт к стартовым, сохраняет рекорд
 function stopGame() {
   document.getElementById("bgame").innerHTML='Start'
   document.getElementById("igame").style.display = "none"
@@ -29,7 +31,13 @@ function stopGame() {
   document.getElementById("tgame").innerHTML="00:10"
 }
 
+//устанавливает и перемещает положение "крота", проигрывает звук
 function imageControl() {
+  let arrGameImages = ['images/game.png','images/game2.png','images/game3.png']
+  let countImage = Math.floor(Math.random() * 3)
+  document.getElementById("image").src = arrGameImages[countImage]
+  
+  
   let num = +document.getElementById("cgame").innerHTML++
   let top = String(Math.round(Math.random() * 300)) + "px"
   let left = String(Math.round(Math.random() * 550)) + "px"
@@ -41,9 +49,12 @@ function imageControl() {
   playSound()
 }
 
+//создание отдельный звуков
 function playSound() {
+  let arrGameSounds = ['sounds/ah.mp3','sounds/ah2.mp3','sounds/ah3.mp3']
+  let countSounds = Math.floor(Math.random() * 3)
   let snd = new Audio()
-  snd.src = "sounds/ah.mp3"
+  snd.src = arrGameSounds[countSounds]
   snd.play()
 }
 
