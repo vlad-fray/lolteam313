@@ -19,7 +19,13 @@
                 <nav class="nav">
                     <a class="nav__link" href="https://html5css.ru/html/default.php" target="_blank">Tutorial</a>
                     <a class="nav__link" href="https://github.com/vlad-fray/lolteam313" target="_blank">GitHub</a>
-                    <a class="nav__link" href="../notaref/notaref.html">BoyNextDoor</a>
+                    
+                    <audio id='nani' src="sounds/nani.mp3"></audio>
+                    <a class="nav__link" onclick="url=this.href;
+                        document.getElementById('nani').play()
+                        setTimeout('location.href=url', 4000); return false" 
+                        href="../notaref/notaref.html">BoyNextDoor</a>
+                    
                     <a class="nav__link" href="https://ru.pathofexile.com/" target="_blank">Пойти Нахуй</a>
                 </nav>
             </div>
@@ -123,7 +129,7 @@
                     <button onclick="gameControl()" id="bgame">Start</button>
                 </div>
                 <div class="game__timer">
-                    <p id="tgame">10:10</p>
+                    <p id="tgame">00:10</p>
                 </div>
                 <div class="game__counter">
                     <p id="cgame">0</p>
