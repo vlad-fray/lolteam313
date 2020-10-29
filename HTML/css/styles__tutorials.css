@@ -1,0 +1,22 @@
+.tutorials {
+    margin: 100px auto;
+    width: 600px;
+}
+
+.tutorials__inner {
+    background-color: powderblue;
+    border: 3px solid turquoise;
+    border-radius: 10px;
+}
+
+.link__list {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
