@@ -1,0 +1,16 @@
+.intro {
+    background: url("../images/intro/photograph.png") center no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.intro__inner {
+    height: 880px;
+    margin: 0 auto;
+
+}
+
+.intro__text {
+    margin: 0 auto;
+}
